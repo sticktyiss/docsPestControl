@@ -14,12 +14,15 @@
 }
 #siteHeader img {
   height: 95%;
+  width: auto;
 }
 
 #siteHeader.shrink {
   height: 8vh;
-  padding: 10px 30px;
-  transform: scaleY(0.95); /* optional mini effect */
+  padding: 5px 10px;
+}
+#siteHeader.shrink h1 {
+  transform: scale(0.95); /* optional mini effect */
 }
 
 main {

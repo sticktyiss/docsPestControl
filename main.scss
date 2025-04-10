@@ -13,12 +13,15 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   img {
     height: 95%;
+    width: auto;
   }
 }
 #siteHeader.shrink {
   height: 8vh;
-  padding: 10px 30px;
-  transform: scaleY(0.95); /* optional mini effect */
+  padding: 5px 10px;
+  h1 {
+    transform: scale(0.95); /* optional mini effect */
+  }
 }
 main {
   height: 200vh;
