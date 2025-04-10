@@ -1,23 +1,23 @@
-header {
+#siteHeader {
   display: flex;
   height: 10vh;
   max-height: 120px;
   position: sticky;
   top: 0;
-  // background: white;
-  // padding: 20px 40px;
-  // display: flex;
-  // justify-content: space-between;
+  background: white;
+  padding: 20px 40px;
+  justify-content: space-around;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
   z-index: 999;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   img {
     height: 95%;
   }
 }
-header.shrink {
+#siteHeader.shrink {
   height: 8vh;
+  padding: 10px 30px;
   transform: scaleY(0.95); /* optional mini effect */
 }
 main {
