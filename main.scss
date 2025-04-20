@@ -3,12 +3,14 @@ $orangeColor: #fc6107;
 
 #siteHeader {
   display: flex;
-  height: 10vh;
-  max-height: 120px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  height: 100px;
+  width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 120px;
   background: white;
-  padding: 10px 30px;
   justify-content: space-around;
   align-items: center;
   transition: all 0.3s ease;
@@ -22,11 +24,11 @@ $orangeColor: #fc6107;
     cursor: pointer;
   }
   h1 {
-    transition: all .3s ease;
+    transition: all .3s ease-out;
   }
 }
 #siteHeader.shrink {
-  height: 6vh;
+  height: 60px;
   padding: 5px 10px;
   h1 {
     transform: scale(0.95); /* optional mini effect */
@@ -34,8 +36,12 @@ $orangeColor: #fc6107;
 }
 main {
   height: 200vh;
+  background-image: radial-gradient(circle, $yellowColor, $orangeColor);
+  #spacer {
+    font-size: 1px;
+  }
   #intro {
-    background-image: radial-gradient(circle, $yellowColor, $orangeColor);
+    margin-top: 120px;
     height: 20vh;
   }
 }
@@ -44,7 +50,6 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
   height: 30px;
   p {
     font-family: Arial, Helvetica, sans-serif;

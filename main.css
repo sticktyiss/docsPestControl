@@ -1,11 +1,13 @@
 #siteHeader {
   display: flex;
-  height: 10vh;
-  max-height: 120px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  height: 100px;
+  width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 120px;
   background: white;
-  padding: 10px 30px;
   justify-content: space-around;
   align-items: center;
   transition: all 0.3s ease;
@@ -20,11 +22,11 @@
   cursor: pointer;
 }
 #siteHeader h1 {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-out;
 }
 
 #siteHeader.shrink {
-  height: 6vh;
+  height: 60px;
   padding: 5px 10px;
 }
 #siteHeader.shrink h1 {
@@ -33,9 +35,13 @@
 
 main {
   height: 200vh;
+  background-image: radial-gradient(circle, #fbb32d, #fc6107);
+}
+main #spacer {
+  font-size: 1px;
 }
 main #intro {
-  background-image: radial-gradient(circle, #fbb32d, #fc6107);
+  margin-top: 120px;
   height: 20vh;
 }
 
@@ -43,7 +49,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
   height: 30px;
 }
 footer p {
