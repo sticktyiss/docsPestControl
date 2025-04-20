@@ -1,3 +1,6 @@
+$yellowColor: #fbb32d;
+$orangeColor: #fc6107;
+
 #siteHeader {
   display: flex;
   height: 10vh;
@@ -15,9 +18,15 @@
     height: 95%;
     width: auto;
   }
+  img:hover {
+    cursor: pointer;
+  }
+  h1 {
+    transition: all .3s ease;
+  }
 }
 #siteHeader.shrink {
-  height: 8vh;
+  height: 6vh;
   padding: 5px 10px;
   h1 {
     transform: scale(0.95); /* optional mini effect */
@@ -25,4 +34,23 @@
 }
 main {
   height: 200vh;
+  #intro {
+    background-image: radial-gradient(circle, $yellowColor, $orangeColor);
+    height: 20vh;
+  }
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+  height: 30px;
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    span {
+      font-weight: bold;
+    }
+  }
 }
