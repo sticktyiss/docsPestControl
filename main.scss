@@ -1,5 +1,8 @@
 $yellowColor: #fbb32d;
 $orangeColor: #fc6107;
+$blackColor: #030301;
+$grayColor: #8f8f8f;
+$whiteColor: #fffcff;
 
 #siteHeader {
   display: flex;
@@ -37,12 +40,25 @@ $orangeColor: #fc6107;
 main {
   height: 200vh;
   background-image: radial-gradient(circle, $yellowColor, $orangeColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   #spacer {
     font-size: 1px;
   }
   #intro {
     margin-top: 120px;
     height: 20vh;
+  }
+  #imageBlendSection {
+    display: flex;
+    height: 40vh;
+    width: 80vw;
+    background-color: gray;
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 }
 
