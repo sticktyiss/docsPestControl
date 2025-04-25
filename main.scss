@@ -4,6 +4,8 @@ $blackColor: #030301;
 $grayColor: #8f8f8f;
 $whiteColor: #fffcff;
 
+$borderRadius: 1vw;
+
 #siteHeader {
   display: flex;
   position: fixed;
@@ -56,13 +58,15 @@ main {
     height: 55vw;
     width: 80vw;
     background-color: $blackColor;
+    border-radius: $borderRadius;
     #blendSectionText {
       // width: 80%;
     }
     img {
       height: auto;
       width: 50%;
-      
+      border-top-right-radius: $borderRadius;
+      border-bottom-right-radius: $borderRadius;
       -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
       mask-image: linear-gradient(to left, black 60%, transparent 100%);
       -webkit-mask-repeat: no-repeat;

@@ -53,10 +53,13 @@ main #imageBlendSection {
   height: 55vw;
   width: 80vw;
   background-color: #030301;
+  border-radius: 1vw;
 }
 main #imageBlendSection img {
   height: auto;
   width: 50%;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
   -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
   mask-image: linear-gradient(to left, black 60%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
