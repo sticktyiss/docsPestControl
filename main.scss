@@ -40,7 +40,7 @@ $borderRadius: 1vw;
   }
 }
 main {
-  height: 200vh;
+  // height: 200vh;
   background-image: radial-gradient(circle, $yellowColor, $orangeColor);
   display: flex;
   flex-direction: column;
@@ -50,13 +50,14 @@ main {
   }
   #intro {
     margin-top: 120px;
-    height: 20vh;
+    // height: 20vh;
   }
   #imageBlendSection {
     display: flex;
     justify-content: space-between;
     height: 55vw;
     width: 80vw;
+    margin: 10vh;
     background-color: $blackColor;
     border-radius: $borderRadius;
     #blendSectionText {
@@ -82,6 +83,9 @@ main {
       -webkit-mask-size: 100% 100%;
       mask-size: 100% 100%;
     }
+  }
+  #services {
+    
   }
 }
 
