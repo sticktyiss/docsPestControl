@@ -85,7 +85,15 @@ main {
     }
   }
   #services {
-    
+    ul {
+      img {
+        width: 5vw;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
