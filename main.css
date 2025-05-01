@@ -88,7 +88,6 @@ main #services ul {
   align-items: center;
 }
 main #services ul li {
-  margin: 10px 20px;
   width: 5vw;
 }
 main #services img {
