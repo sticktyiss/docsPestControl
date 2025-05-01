@@ -77,7 +77,18 @@ main #imageBlendSection img {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
-main #services ul img {
+main #services {
+  background-color: #fffcff;
+}
+main #services ul {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main #services ul li {
+  margin: 10px 20px;
   width: 5vw;
 }
 main #services img {

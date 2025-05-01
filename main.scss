@@ -85,8 +85,15 @@ main {
     }
   }
   #services {
+    background-color: $whiteColor;
     ul {
-      img {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin: 10px 20px;
         width: 5vw;
       }
     }
