@@ -92,14 +92,27 @@ main {
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-      li {
+      img {
         // margin: 10px 20px;
         width: 5vw;
+        height: auto;
+        -webkit-mask-image: linear-gradient(300 deg, black 50%, transparent 100%);
+        mask-image: linear-gradient(300deg, black 50%, transparent 100%);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
       }
     }
-    img { //TODO: fade image upwards into icons
+    #docCleaning { //TODO: fade image upwards into icons
       width: 100%;
       height: auto;
+      -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
+      mask-image: linear-gradient(to left, black 60%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
     }
   }
 }
