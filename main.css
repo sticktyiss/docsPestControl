@@ -78,7 +78,8 @@ main #imageBlendSection img {
   mask-size: 100% 100%;
 }
 main #services {
-  background-color: #fffcff;
+  background-image: url(images/docWindow.jpeg);
+  background-size: cover;
 }
 main #services ul {
   margin: 20px;

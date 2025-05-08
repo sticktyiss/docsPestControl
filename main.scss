@@ -85,7 +85,9 @@ main {
     }
   }
   #services {
-    background-color: $whiteColor;
+    // background-color: $whiteColor;
+    background-image: url(images/docWindow.jpeg);
+    background-size: cover;
     ul {
       margin: 20px;
       display: flex;
@@ -124,9 +126,8 @@ footer{
   height: 30px;
   p {
     font-family: Arial, Helvetica, sans-serif;
-
-    span {
-      font-weight: bold;
+  span {
+    font-weight: bold;
     }
   }
 }
