@@ -78,7 +78,7 @@ main #imageBlendSection img {
   mask-size: 100% 100%;
 }
 main #services {
-  background-image: url(images/docWindow.jpeg);
+  background: linear-gradient(to bottom, #fffcff 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(images/docWindow.jpeg) no-repeat;
   background-size: cover;
 }
 main #services ul {
