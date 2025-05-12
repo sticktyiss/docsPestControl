@@ -3,8 +3,10 @@ $orangeColor: #fc6107;
 $blackColor: #030301;
 $grayColor: #8f8f8f;
 $whiteColor: #fffcff;
+$dropShadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 
 $borderRadius: 1vw;
+$fontSizeTitle: 40px;
 
 #siteHeader {
   display: flex;
@@ -20,7 +22,7 @@ $borderRadius: 1vw;
   align-items: center;
   transition: all 0.3s ease;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   img {
     height: 95%;
     width: auto;
@@ -29,7 +31,7 @@ $borderRadius: 1vw;
     cursor: pointer;
   }
   h1 {
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
   }
 }
 #siteHeader.shrink {
@@ -87,8 +89,14 @@ main {
   #services {
     min-height: 1000px;
     width: 100%;
-    background: 
-      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, $whiteColor 100%),
+    background: linear-gradient(
+        to bottom,
+        $whiteColor 0%,
+        $whiteColor 20%,
+        rgba(0, 0, 0, 0) 40%,
+        rgba(0, 0, 0, 0) 70%,
+        $whiteColor 100%
+      ),
       url(images/docWindow-short.webp) no-repeat;
     background-size: cover;
     background-position: 0px center;
@@ -101,7 +109,11 @@ main {
       img {
         width: 5vw;
         height: auto;
-        -webkit-mask-image: linear-gradient(300 deg, black 50%, transparent 100%);
+        -webkit-mask-image: linear-gradient(
+          300 deg,
+          black 50%,
+          transparent 100%
+        );
         mask-image: linear-gradient(300deg, black 50%, transparent 100%);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
@@ -119,7 +131,8 @@ main {
       grid-template-columns: repeat(4, 1fr);
       gap: 0px;
       margin: 10px;
-      .pest:nth-child(1), .pest:nth-child(2) {
+      .pest:nth-child(1),
+      .pest:nth-child(2) {
         grid-column: span 2;
       }
     }
@@ -136,13 +149,13 @@ main {
       h3 {
         font-size: 40px;
         transform: translateY(10px);
-        transition: transform .4s ease;
+        transition: transform 0.4s ease;
       }
       p {
         opacity: 0;
         margin-top: 20px;
         width: 70%;
-        transition: opacity .4s ease, transform .4s ease;
+        transition: opacity 0.4s ease, transform 0.4s ease;
         transform: translateY(20px);
       }
     }
@@ -188,17 +201,50 @@ main {
       }
     }
   }
+  #faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: $fontSizeTitle;
+      margin-top: 1.2em;
+    }
+    dl {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      padding: 40px;
+      margin: 40px 0px;
+      background-image: radial-gradient($yellowColor, $orangeColor);
+      border: $blackColor solid 5px;
+      border-radius: $borderRadius;
+      box-shadow: $dropShadow;
+      dt {
+        margin-left: 5%;
+        margin-bottom: 10px;
+      }
+      dd {
+        margin: 0px 10%;
+      }
+      .faqBreak {
+        height: 5px;
+        border-radius: $borderRadius;
+        background-color: $blackColor;
+        margin: 30px 0px;
+      }
+    }
+  }
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30px;
   p {
     font-family: Arial, Helvetica, sans-serif;
-  span {
-    font-weight: bold;
+    span {
+      font-weight: bold;
     }
   }
 }

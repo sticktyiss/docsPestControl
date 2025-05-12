@@ -112,7 +112,8 @@ main #servicesDetailed .gridLayout {
   gap: 0px;
   margin: 10px;
 }
-main #servicesDetailed .gridLayout .pest:nth-child(1), main #servicesDetailed .gridLayout .pest:nth-child(2) {
+main #servicesDetailed .gridLayout .pest:nth-child(1),
+main #servicesDetailed .gridLayout .pest:nth-child(2) {
   grid-column: span 2;
 }
 main #servicesDetailed .pest {
@@ -175,6 +176,39 @@ main #contactUs #mapWithText div {
 }
 main #contactUs #mapWithText div h3 {
   font-size: 30px;
+}
+main #faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #faq h2 {
+  font-size: 40px;
+  margin-top: 1.2em;
+}
+main #faq dl {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 40px;
+  margin: 40px 0px;
+  background-image: radial-gradient(#fbb32d, #fc6107);
+  border: #030301 solid 5px;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
+}
+main #faq dl dt {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+main #faq dl dd {
+  margin: 0px 10%;
+}
+main #faq dl .faqBreak {
+  height: 5px;
+  border-radius: 1vw;
+  background-color: #030301;
+  margin: 30px 0px;
 }
 
 footer {
