@@ -78,7 +78,7 @@ main #imageBlendSection img {
   mask-size: 100% 100%;
 }
 main #services {
-  background: linear-gradient(to bottom, #fffcff 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(images/docWindow.jpeg) no-repeat;
+  background: linear-gradient(to bottom, #fffcff 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(images/docWindow.webp) no-repeat;
   background-size: cover;
 }
 main #services ul {
@@ -93,16 +93,6 @@ main #services ul img {
   height: auto;
   -webkit-mask-image: linear-gradient(300 deg, black 50%, transparent 100%);
   mask-image: linear-gradient(300deg, black 50%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-}
-main #services #docCleaning {
-  width: 100%;
-  height: auto;
-  -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
-  mask-image: linear-gradient(to top, black 60%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
