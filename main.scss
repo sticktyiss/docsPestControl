@@ -88,7 +88,7 @@ main {
     min-height: 1000px;
     width: 100%;
     background: 
-      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, $whiteColor 98%),
+      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, $whiteColor 100%),
       url(images/docWindow-short.webp) no-repeat;
     background-size: cover;
     background-position: 0px center;
@@ -117,11 +117,38 @@ main {
     .gridLayout {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 5px;
+      gap: 0px;
+      margin: 10px;
       .pest:nth-child(1), .pest:nth-child(2) {
         grid-column: span 2;
       }
     }
+    .pest {
+      background-color: $grayColor;
+      height: 20vw;
+      margin: 10px;
+      border-radius: $borderRadius;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 1s;
+      h3 {
+        font-size: 40px;
+      }
+      p {
+        opacity: 0;
+        margin-top: 20px;
+        width: 70%;
+        transition: opacity .4s ease;
+      }
+    }
+    .pest:hover {
+      p {
+        opacity: 1;
+      }
+    }
+    // TODO: Add backgoround images to the grid layout
   }
 }
 
