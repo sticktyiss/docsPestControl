@@ -85,16 +85,18 @@ main {
     }
   }
   #services {
-    // background-color: $whiteColor;
+    min-height: 1000px;
     background: 
-      linear-gradient(to bottom, $whiteColor 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%),
-      url(images/docWindow.webp) no-repeat;
+      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, $whiteColor 100%),
+      // url(images/docWindow.webp) no-repeat;
+      url(images/docWindow-short.webp) no-repeat;
     background-size: cover;
+    background-position: 0px center;
     ul {
-      margin: 20px;
+      margin: 40px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       img {
         // margin: 10px 20px;
@@ -107,6 +109,9 @@ main {
         -webkit-mask-size: 100% 100%;
         mask-size: 100% 100%;
       }
+    }
+    #servicesDetailed {
+      margin: 50px;
     }
     // #docCleaning { //TODO: fade image upwards into icons
     //   width: 100%;
