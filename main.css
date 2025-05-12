@@ -146,6 +146,46 @@ main #servicesDetailed .pest:hover p {
   opacity: 1;
   transform: translateY(0);
 }
+main #servicesDetailed #residential {
+  background-image: url("./images/bugs/residential.webp");
+  background-size: cover;
+}
+main #servicesDetailed #commercial {
+  background-image: url("./images/bugs/commercial.webp");
+  background-size: cover;
+}
+main #servicesDetailed #rodent {
+  background-image: url("./images/bugs/rodent.webp");
+  background-size: cover;
+}
+main #servicesDetailed #wasp {
+  background-image: url(./images/bugs/wasp.webp);
+  background-size: cover;
+}
+main #servicesDetailed #cockroach {
+  background-image: url("./images/bugs/cockroach.webp");
+  background-size: cover;
+}
+main #servicesDetailed #ant {
+  background-image: url("./images/bugs/ant.webp");
+  background-size: cover;
+}
+main #servicesDetailed #scorpion {
+  background-image: url("./images/bugs/scorpion.webp");
+  background-size: cover;
+}
+main #servicesDetailed #silverfish {
+  background-image: url("./images/bugs/silverfish.webp");
+  background-size: cover;
+}
+main #servicesDetailed #spider {
+  background-image: url("./images/bugs/spider.webp");
+  background-size: cover;
+}
+main #servicesDetailed #mosquito {
+  background-image: url("./images/bugs/mosquito.webp");
+  background-size: cover;
+}
 main #contactUs {
   width: 100%;
   padding-bottom: 5vh;

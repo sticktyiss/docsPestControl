@@ -169,6 +169,47 @@ main {
       }
     }
     // TODO: Add backgoround images to the grid layout
+    #residential {
+      background-image: url('./images/bugs/residential.webp');
+      background-size: cover;
+    }
+    #commercial {
+      background-image: url('./images/bugs/commercial.webp');
+      background-size: cover;
+    }
+    #rodent {
+      background-image: url('./images/bugs/rodent.webp');
+      background-size: cover;
+    }
+    #wasp {
+      background-image: url(./images/bugs/wasp.webp);
+      background-size: cover;
+    }
+    #cockroach {
+      background-image: url('./images/bugs/cockroach.webp');
+      background-size: cover;
+    }
+    #ant {
+      background-image: url('./images/bugs/ant.webp');
+      background-size: cover;
+    }
+    #scorpion {
+      background-image: url('./images/bugs/scorpion.webp');
+      background-size: cover;
+    }
+    #silverfish {
+      background-image: url('./images/bugs/silverfish.webp');
+      background-size: cover;
+    }
+    #spider {
+      // FIXME: Get spider image
+      background-image: url('./images/bugs/spider.webp');
+      background-size: cover;
+    }
+    #mosquito {
+      background-image: url('./images/bugs/mosquito.webp');
+      background-size: cover;
+    }
   }
   #contactUs {
     width: 100%;
