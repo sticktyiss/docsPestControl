@@ -140,6 +140,7 @@ main #servicesDetailed .pest:hover p {
 }
 main #contactUs {
   width: 100%;
+  padding-bottom: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,6 +161,13 @@ main #contactUs #mapWithText img {
 }
 main #contactUs #mapWithText div {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main #contactUs #mapWithText div h3 {
+  font-size: 30px;
 }
 
 footer {
