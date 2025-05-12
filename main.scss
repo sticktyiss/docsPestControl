@@ -135,17 +135,24 @@ main {
       transition-duration: 1s;
       h3 {
         font-size: 40px;
+        transform: translateY(10px);
+        transition: transform .4s ease;
       }
       p {
         opacity: 0;
         margin-top: 20px;
         width: 70%;
-        transition: opacity .4s ease;
+        transition: opacity .4s ease, transform .4s ease;
+        transform: translateY(20px);
       }
     }
     .pest:hover {
+      h3 {
+        transform: translateY(0);
+      }
       p {
         opacity: 1;
+        transform: translateY(0);
       }
     }
     // TODO: Add backgoround images to the grid layout

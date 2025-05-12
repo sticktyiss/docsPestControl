@@ -128,15 +128,22 @@ main #servicesDetailed .pest {
 }
 main #servicesDetailed .pest h3 {
   font-size: 40px;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
 }
 main #servicesDetailed .pest p {
   opacity: 0;
   margin-top: 20px;
   width: 70%;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+}
+main #servicesDetailed .pest:hover h3 {
+  transform: translateY(0);
 }
 main #servicesDetailed .pest:hover p {
   opacity: 1;
+  transform: translateY(0);
 }
 main #contactUs {
   width: 100%;
