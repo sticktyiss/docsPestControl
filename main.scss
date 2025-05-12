@@ -111,8 +111,17 @@ main {
     }
   }
   #servicesDetailed {
-    // margin-top: 500px;
-    
+    padding: 20px 0px;
+    background-color: $whiteColor;
+    width: 100%;
+    .gridLayout {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      .pest:nth-child(1), .pest:nth-child(2) {
+        grid-column: span 2;
+      }
+    }
   }
 }
 
