@@ -25,3 +25,6 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.pest').forEach(item => {
   observer.observe(item);
 });
+document.querySelectorAll('dl > *').forEach(item => {
+  observer.observe(item);
+});
