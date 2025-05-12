@@ -239,7 +239,7 @@ main #faq dl {
   padding: 40px;
   margin: 40px 0px;
   background-image: radial-gradient(#fbb32d, #fc6107);
-  border: #030301 solid 5px;
+  border: #030301 solid 2px;
   border-radius: 1vw;
   box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
@@ -255,6 +255,9 @@ main #faq dl .faqBreak {
   border-radius: 1vw;
   background-color: #030301;
   margin: 30px 0px;
+  width: 5vw;
+  align-self: center;
+  transition: width 1s ease;
 }
 main #faq dl > * {
   opacity: 0;
@@ -264,6 +267,9 @@ main #faq dl > * {
 main #faq dl > *.visible {
   opacity: 1;
   transform: translateY(0);
+}
+main #faq .faqBreak.visible {
+  width: 100%;
 }
 
 footer {

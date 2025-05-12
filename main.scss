@@ -263,7 +263,7 @@ main {
       padding: 40px;
       margin: 40px 0px;
       background-image: radial-gradient($yellowColor, $orangeColor);
-      border: $blackColor solid 5px;
+      border: $blackColor solid 2px;
       border-radius: $borderRadius;
       box-shadow: $dropShadow;
       dt {
@@ -278,6 +278,9 @@ main {
         border-radius: $borderRadius;
         background-color: $blackColor;
         margin: 30px 0px;
+        width: 5vw;
+        align-self: center;
+        transition: width 1s ease;
       }
     }
     dl > * {
@@ -288,6 +291,9 @@ main {
     dl > *.visible {
       opacity: 1;
       transform: translateY(0);
+    }
+    .faqBreak.visible {
+      width: 100%;
     }
   }
 }
