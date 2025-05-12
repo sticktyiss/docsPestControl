@@ -138,6 +138,29 @@ main #servicesDetailed .pest p {
 main #servicesDetailed .pest:hover p {
   opacity: 1;
 }
+main #contactUs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffcff;
+}
+main #contactUs h2 {
+  margin: 10vh;
+  font-size: 40px;
+}
+main #contactUs #mapWithText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main #contactUs #mapWithText img {
+  width: 40%;
+}
+main #contactUs #mapWithText div {
+  width: 40%;
+}
 
 footer {
   display: flex;

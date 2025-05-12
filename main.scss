@@ -150,6 +150,29 @@ main {
     }
     // TODO: Add backgoround images to the grid layout
   }
+  #contactUs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $whiteColor;
+    h2 {
+      margin: 10vh;
+      font-size: 40px;
+    }
+    #mapWithText {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      img {
+        width: 40%;
+      }
+      div {
+        width: 40%;
+      }
+    }
+  }
 }
 
 footer{
