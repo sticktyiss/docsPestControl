@@ -79,7 +79,8 @@ main #imageBlendSection img {
 }
 main #services {
   min-height: 1000px;
-  background: linear-gradient(to bottom, #fffcff 0%, #fffcff 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, #fffcff 100%), url(images/docWindow-short.webp) no-repeat;
+  width: 100%;
+  background: linear-gradient(to bottom, #fffcff 0%, #fffcff 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #fffcff 98%), url(images/docWindow-short.webp) no-repeat;
   background-size: cover;
   background-position: 0px center;
 }
@@ -100,10 +101,6 @@ main #services ul img {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
-main #services #servicesDetailed {
-  margin: 50px;
-}
-
 footer {
   display: flex;
   align-items: center;

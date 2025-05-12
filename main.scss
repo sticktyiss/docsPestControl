@@ -86,9 +86,9 @@ main {
   }
   #services {
     min-height: 1000px;
+    width: 100%;
     background: 
-      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, $whiteColor 100%),
-      // url(images/docWindow.webp) no-repeat;
+      linear-gradient(to bottom, $whiteColor 0%, $whiteColor 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, $whiteColor 98%),
       url(images/docWindow-short.webp) no-repeat;
     background-size: cover;
     background-position: 0px center;
@@ -99,7 +99,6 @@ main {
       justify-content: space-evenly;
       align-items: center;
       img {
-        // margin: 10px 20px;
         width: 5vw;
         height: auto;
         -webkit-mask-image: linear-gradient(300 deg, black 50%, transparent 100%);
@@ -110,19 +109,10 @@ main {
         mask-size: 100% 100%;
       }
     }
-    #servicesDetailed {
-      margin: 50px;
-    }
-    // #docCleaning { //TODO: fade image upwards into icons
-    //   width: 100%;
-    //   height: auto;
-    //   -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
-    //   mask-image: linear-gradient(to top, black 60%, transparent 100%);
-    //   -webkit-mask-repeat: no-repeat;
-    //   mask-repeat: no-repeat;
-    //   -webkit-mask-size: 100% 100%;
-    //   mask-size: 100% 100%;
-    // }
+  }
+  #servicesDetailed {
+    // margin-top: 500px;
+    
   }
 }
 
