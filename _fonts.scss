@@ -1,2 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Flavors&display=swap);
 $fontPestTitle: 'Flavors', sans-serif;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
+$fontPestDesc: 'Roboto Flex', sans-serif;
+
+@mixin text-stroke($width, $color, $fill: white) {
+  color: $fill;
+  -webkit-text-stroke: $width $color;
+}

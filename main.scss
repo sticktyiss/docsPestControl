@@ -153,6 +153,8 @@ main {
       h3 {
         font-family: $fontPestTitle;
         font-size: 4vw;
+        color: $whiteColor;
+        text-shadow: $blackColor 0px 0px 10px;
         transform: translateY(10px);
         transition: transform 0.4s ease;
       }
@@ -160,6 +162,14 @@ main {
         opacity: 0;
         margin-top: 20px;
         width: 70%;
+        font-family: $fontPestDesc;
+        font-size: 20px;
+        color: $whiteColor;
+        text-shadow: 
+          $blackColor 0 0 10px,
+          $blackColor 0 0 10px;
+        text-align: center;
+        line-height: 1.2em;
         transition: opacity 0.4s ease, transform 0.4s ease;
         transform: translateY(20px);
       }

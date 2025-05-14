@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Flavors&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
 #siteHeader {
   display: flex;
   position: fixed;
@@ -133,6 +134,8 @@ main #servicesDetailed .pest {
 main #servicesDetailed .pest h3 {
   font-family: "Flavors", sans-serif;
   font-size: 4vw;
+  color: #fffcff;
+  text-shadow: #030301 0px 0px 10px;
   transform: translateY(10px);
   transition: transform 0.4s ease;
 }
@@ -140,6 +143,12 @@ main #servicesDetailed .pest p {
   opacity: 0;
   margin-top: 20px;
   width: 70%;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 20px;
+  color: #fffcff;
+  text-shadow: #030301 0 0 10px, #030301 0 0 10px;
+  text-align: center;
+  line-height: 1.2em;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(20px);
 }
