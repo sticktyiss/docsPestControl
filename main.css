@@ -1,11 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Flavors&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap);
-.callUsButton {
-  background-color: #fc6107;
-  border: 1em white solid;
-}
-
 #siteHeader {
   display: flex;
   position: fixed;
@@ -28,16 +23,18 @@
 #siteHeader img:hover {
   cursor: pointer;
 }
-#siteHeader h1 {
-  transition: all 0.3s ease-out;
+#siteHeader button {
+  color: #fc6107;
+  font-size: 40px;
+  font-family: "Hanuman", serif;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
 }
 
 #siteHeader.shrink {
   height: 60px;
   padding: 5px 10px;
-}
-#siteHeader.shrink h1 {
-  transform: scale(0.95); /* optional mini effect */
 }
 
 main {

@@ -10,17 +10,15 @@ $borderRadius: 1vw;
 @import "fonts";
 $fontSizeTitle: 40px;
 
-@mixin callUsButton($bgColor, $borderColor, $textColor) {
-  padding: 1em;
+@mixin callUsButton($bgColor1, $bgColor2, $borderColor, $textColor) {
+  padding: .8em;
   border-radius: $borderRadius;
-  border: $borderColor solid 1em;
+  border: $borderColor solid .2em;
   color: $textColor;
+  background-image: radial-gradient($bgColor1, $bgColor2);
+  font-family: $fontTitle;
 }
 
-.callUsButton {
-  background-color: $orangeColor;
-  border: 1em white solid;
-}
 #siteHeader {
   display: flex;
   position: fixed;
@@ -42,16 +40,23 @@ $fontSizeTitle: 40px;
   img:hover {
     cursor: pointer;
   }
-  h1 {
-    transition: all 0.3s ease-out;
+  button {
+    color: $orangeColor;
+    font-size: 40px;
+    font-family: $fontTitle;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    // TODO: Finish customizing buttons on the site;
+    // FIXME: Finish Customizing buttons and then fonts;
   }
 }
 #siteHeader.shrink {
   height: 60px;
   padding: 5px 10px;
-  h1 {
-    transform: scale(0.95); /* optional mini effect */
-  }
+  // button {
+  //   transform: scale(0.95); /* optional mini effect */
+  // }
 }
 main {
   background-image: radial-gradient(circle, $yellowColor, $orangeColor);
