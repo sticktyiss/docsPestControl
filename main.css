@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Flavors&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap);
 #siteHeader {
   display: flex;
   position: fixed;
@@ -8,7 +9,6 @@
   width: 100vw;
   padding-top: 10px;
   padding-bottom: 10px;
-  max-height: 120px;
   background: white;
   justify-content: space-around;
   align-items: center;
@@ -44,11 +44,19 @@ main {
 main p, main dd {
   font-family: "Roboto Flex", sans-serif;
 }
+main dt, main h1, main h2, main h3, main button {
+  font-family: "Hanuman", serif;
+}
 main #spacer {
   font-size: 1px;
 }
 main #intro {
-  margin-top: 120px;
+  margin-top: 160px;
+  width: 60%;
+}
+main #intro h1 {
+  font-weight: 700;
+  font-size: 3vw;
 }
 main #imageBlendSection {
   display: flex;
@@ -69,7 +77,9 @@ main #imageBlendSection #blendSectionText {
 }
 main #imageBlendSection #blendSectionText p {
   max-width: 80%;
-  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.5vw;
+  line-height: 1.2em;
+  font-weight: 100;
 }
 main #imageBlendSection img {
   height: auto;
@@ -147,12 +157,12 @@ main #servicesDetailed .pest p {
   opacity: 0;
   margin-top: 20px;
   width: 70%;
-  font-family: "Roboto Flex", sans-serif;
   font-size: 1.5vw;
   color: #fffcff;
   text-shadow: #030301 0 0 10px, #030301 0 0 10px;
   text-align: center;
   line-height: 1.2em;
+  font-weight: 300;
   transition: opacity 0.4s ease, transform 0.4s ease;
   transform: translateY(20px);
 }
