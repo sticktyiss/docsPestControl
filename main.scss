@@ -10,6 +10,17 @@ $borderRadius: 1vw;
 @import "fonts";
 $fontSizeTitle: 40px;
 
+@mixin callUsButton($bgColor, $borderColor, $textColor) {
+  padding: 1em;
+  border-radius: $borderRadius;
+  border: $borderColor solid 1em;
+  color: $textColor;
+}
+
+.callUsButton {
+  background-color: $orangeColor;
+  border: 1em white solid;
+}
 #siteHeader {
   display: flex;
   position: fixed;
@@ -57,11 +68,19 @@ main {
     font-size: 1px;
   }
   #intro {
-    margin-top: 160px;
+    margin-top: calc(120px + 8vh);
     width: 60%;
+    text-align: center;
     h1 {
       font-weight: 700;
       font-size: 3vw;
+      line-height: 1.2em;
+    }
+    p {
+      margin: 1vh;
+    }
+    button {
+      margin-top: 3vh;
     }
   }
   #imageBlendSection {

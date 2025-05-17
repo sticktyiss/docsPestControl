@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Flavors&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap);
+.callUsButton {
+  background-color: #fc6107;
+  border: 1em white solid;
+}
+
 #siteHeader {
   display: flex;
   position: fixed;
@@ -51,12 +56,20 @@ main #spacer {
   font-size: 1px;
 }
 main #intro {
-  margin-top: 160px;
+  margin-top: calc(120px + 8vh);
   width: 60%;
+  text-align: center;
 }
 main #intro h1 {
   font-weight: 700;
   font-size: 3vw;
+  line-height: 1.2em;
+}
+main #intro p {
+  margin: 1vh;
+}
+main #intro button {
+  margin-top: 3vh;
 }
 main #imageBlendSection {
   display: flex;
