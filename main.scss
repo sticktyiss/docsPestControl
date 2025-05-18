@@ -28,35 +28,39 @@ $fontSizeTitle: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   background: white;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   z-index: 999;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   img {
     height: 95%;
     width: auto;
+    margin-left: 30px;
   }
   img:hover {
     cursor: pointer;
   }
   button {
+    position: absolute;
+    top: 30px;
+    right: 40px;
     color: $orangeColor;
     font-size: 40px;
     font-family: $fontTitle;
     font-weight: 600;
     background-color: transparent;
     border: none;
-    // TODO: Finish customizing buttons on the site;
-    // FIXME: Finish Customizing buttons and then fonts;
+    transition: font-size .4s ease, top .4s ease;
   }
 }
 #siteHeader.shrink {
   height: 60px;
   padding: 5px 10px;
-  // button {
-  //   transform: scale(0.95); /* optional mini effect */
-  // }
+  button {
+    top: 15px;
+    font-size: 30px;
+  }
 }
 main {
   background-image: radial-gradient(circle, $yellowColor, $orangeColor);
