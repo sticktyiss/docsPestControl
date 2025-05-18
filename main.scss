@@ -11,12 +11,13 @@ $borderRadius: 1vw;
 $fontSizeTitle: 40px;
 
 @mixin callUsButton($bgColor1, $bgColor2, $borderColor, $textColor) {
-  padding: .8em;
+  padding: .6em .8em;
   border-radius: $borderRadius;
   border: $borderColor solid .2em;
   color: $textColor;
   background-image: radial-gradient($bgColor1, $bgColor2);
   font-family: $fontTitle;
+  cursor: pointer;
 }
 
 #siteHeader {
@@ -87,9 +88,13 @@ main {
     }
     p {
       margin: 1vh;
+      font-size: 1.2em;
     }
     button {
       margin-top: 3vh;
+      @include callUsButton($whiteColor, $whiteColor, $blackColor, $orangeColor);
+      font-size: 20px;
+      font-weight: 700;
     }
   }
   #imageBlendSection {

@@ -73,9 +73,19 @@ main #intro h1 {
 }
 main #intro p {
   margin: 1vh;
+  font-size: 1.2em;
 }
 main #intro button {
   margin-top: 3vh;
+  padding: 0.6em 0.8em;
+  border-radius: 1vw;
+  border: #030301 solid 0.2em;
+  color: #fc6107;
+  background-image: radial-gradient(#fffcff, #fffcff);
+  font-family: "Hanuman", serif;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
 }
 main #imageBlendSection {
   display: flex;
