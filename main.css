@@ -90,7 +90,7 @@ main #intro button {
   font-weight: 700;
 }
 main #intro button:hover {
-  box-shadow: #030301 8px 10px 0px;
+  box-shadow: #030301 8px 15px 0px;
   transform: translateY(-4px);
 }
 main #imageBlendSection {
@@ -109,6 +109,10 @@ main #imageBlendSection #blendSectionText {
   align-items: center;
   justify-content: space-around;
   color: #fffcff;
+}
+main #imageBlendSection #blendSectionText h2 {
+  font-size: 2vw;
+  font-weight: 600;
 }
 main #imageBlendSection #blendSectionText p {
   max-width: 80%;
@@ -263,7 +267,8 @@ main #contactUs {
 }
 main #contactUs h2 {
   margin: 10vh;
-  font-size: 40px;
+  font-size: 3vw;
+  font-weight: 600;
 }
 main #contactUs #mapWithText {
   display: flex;
@@ -272,6 +277,8 @@ main #contactUs #mapWithText {
 }
 main #contactUs #mapWithText img {
   width: 40%;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
 main #contactUs #mapWithText div {
   width: 40%;
@@ -279,9 +286,30 @@ main #contactUs #mapWithText div {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 }
 main #contactUs #mapWithText div h3 {
-  font-size: 30px;
+  font-size: 2.2vw;
+}
+main #contactUs #mapWithText div p {
+  font-size: 1.5vw;
+}
+main #contactUs #mapWithText div button {
+  padding: 0.6em 0.8em;
+  border-radius: 1vw;
+  border: #030301 solid 0.2em;
+  color: #fffcff;
+  background-image: radial-gradient(#fc6107, #fc6107);
+  font-family: "Hanuman", serif;
+  cursor: pointer;
+  box-shadow: #030301 5px 5px 0px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+main #contactUs #mapWithText div button:hover {
+  box-shadow: #030301 8px 15px 0px;
+  transform: translateY(-4px);
 }
 main #faq {
   display: flex;
@@ -289,7 +317,8 @@ main #faq {
   align-items: center;
 }
 main #faq h2 {
-  font-size: 40px;
+  font-size: 3vw;
+  font-weight: 600;
   margin-top: 1.2em;
 }
 main #faq dl {
@@ -299,16 +328,19 @@ main #faq dl {
   padding: 40px;
   margin: 40px 0px;
   background-image: radial-gradient(#fbb32d, #fc6107);
-  border: #030301 solid 2px;
   border-radius: 1vw;
   box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
 main #faq dl dt {
   margin-left: 5%;
   margin-bottom: 10px;
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-style: italic;
 }
 main #faq dl dd {
   margin: 0px 10%;
+  font-size: 1.2vw;
 }
 main #faq dl .faqBreak {
   height: 5px;

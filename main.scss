@@ -8,7 +8,8 @@ $dropShadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 $borderRadius: 1vw;
 
 @import "fonts";
-$fontSizeTitle: 40px;
+$fontSizeTitle: 3vw;
+$fontWeightTitle: 600;
 
 @mixin callUsButton($bgColor1, $bgColor2, $borderColor, $textColor) {
   padding: .6em .8em;
@@ -20,6 +21,12 @@ $fontSizeTitle: 40px;
   cursor: pointer;
   box-shadow: $blackColor 5px 5px 0px;
   transition: transform .4s ease, box-shadow .4s ease;
+}
+@mixin callUsButtonHover() {
+  button:hover {
+    box-shadow: $blackColor 8px 15px 0px;
+    transform: translateY(-4px);
+  }
 }
 
 #siteHeader {
@@ -98,10 +105,11 @@ main {
       font-size: 20px;
       font-weight: 700;
     }
-    button:hover {
-      box-shadow: $blackColor 8px 10px 0px;
-      transform: translateY(-4px);
-    }
+    // button:hover {
+    //   box-shadow: $blackColor 8px 10px 0px;
+    //   transform: translateY(-4px);
+    // }
+    @include callUsButtonHover();
   }
   #imageBlendSection {
     display: flex;
@@ -118,6 +126,10 @@ main {
       align-items: center;
       justify-content: space-around;
       color: $whiteColor;
+      h2 {
+        font-size: 2vw;
+        font-weight: 600;
+      }
       p {
         max-width: 80%;
         font-size: 1.5vw;
@@ -291,7 +303,8 @@ main {
     background-color: $whiteColor;
     h2 {
       margin: 10vh;
-      font-size: 40px;
+      font-size: $fontSizeTitle;
+      font-weight: $fontWeightTitle;
     }
     #mapWithText {
       display: flex;
@@ -299,6 +312,8 @@ main {
       justify-content: space-around;
       img {
         width: 40%;
+        border-radius: $borderRadius;
+        box-shadow: $dropShadow;
       }
       div {
         width: 40%;
@@ -306,9 +321,19 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        text-align: center;
         h3 {
-          font-size: 30px;
+          font-size: 2.2vw;
         }
+        p {
+          font-size: 1.5vw;
+        }
+        button {
+          @include callUsButton($orangeColor, $orangeColor, $blackColor, $whiteColor);
+          font-size: 1.5vw;
+          font-weight: 600;
+        }
+        @include callUsButtonHover();
       }
     }
   }
@@ -318,6 +343,7 @@ main {
     align-items: center;
     h2 {
       font-size: $fontSizeTitle;
+      font-weight: $fontWeightTitle;
       margin-top: 1.2em;
     }
     dl {
@@ -327,15 +353,19 @@ main {
       padding: 40px;
       margin: 40px 0px;
       background-image: radial-gradient($yellowColor, $orangeColor);
-      border: $blackColor solid 2px;
+      // border: $blackColor solid 2px;
       border-radius: $borderRadius;
       box-shadow: $dropShadow;
       dt {
         margin-left: 5%;
         margin-bottom: 10px;
+        font-size: 1.5vw;
+        font-weight: 600;
+        font-style: italic;
       }
       dd {
         margin: 0px 10%;
+        font-size: 1.2vw;
       }
       .faqBreak {
         height: 5px;
