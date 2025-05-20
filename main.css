@@ -84,8 +84,14 @@ main #intro button {
   background-image: radial-gradient(#fffcff, #fffcff);
   font-family: "Hanuman", serif;
   cursor: pointer;
+  box-shadow: #030301 5px 5px 0px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   font-size: 20px;
   font-weight: 700;
+}
+main #intro button:hover {
+  box-shadow: #030301 8px 10px 0px;
+  transform: translateY(-4px);
 }
 main #imageBlendSection {
   display: flex;

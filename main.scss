@@ -18,6 +18,8 @@ $fontSizeTitle: 40px;
   background-image: radial-gradient($bgColor1, $bgColor2);
   font-family: $fontTitle;
   cursor: pointer;
+  box-shadow: $blackColor 5px 5px 0px;
+  transition: transform .4s ease, box-shadow .4s ease;
 }
 
 #siteHeader {
@@ -95,6 +97,10 @@ main {
       @include callUsButton($whiteColor, $whiteColor, $blackColor, $orangeColor);
       font-size: 20px;
       font-weight: 700;
+    }
+    button:hover {
+      box-shadow: $blackColor 8px 10px 0px;
+      transform: translateY(-4px);
     }
   }
   #imageBlendSection {
