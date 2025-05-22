@@ -104,6 +104,7 @@ main #imageBlendSection {
 }
 main #imageBlendSection #blendSectionText {
   width: 50%;
+  margin: 3vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,10 +114,11 @@ main #imageBlendSection #blendSectionText {
 main #imageBlendSection #blendSectionText h2 {
   font-size: 2vw;
   font-weight: 600;
+  justify-self: flex-start;
 }
 main #imageBlendSection #blendSectionText p {
   max-width: 80%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   line-height: 1.2em;
   font-weight: 100;
 }
@@ -315,6 +317,7 @@ main #faq {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2vh;
 }
 main #faq h2 {
   font-size: 3vw;
