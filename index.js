@@ -28,3 +28,10 @@ document.querySelectorAll('.pest').forEach(item => {
 document.querySelectorAll('dl > *').forEach(item => {
   observer.observe(item);
 });
+
+const sendEmail = () => {
+  const recipient = "octavio.pen21@gmail.com";
+  const subject = "Customer Inquiry from Your Website";
+  const body = "Hello,\n\nI’d like to get in touch regarding your services.";
+  window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
