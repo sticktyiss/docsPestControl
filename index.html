@@ -11,30 +11,57 @@
   <body>
     <header id="siteHeader">
       <img src="./images/docsLogoNoBorder.png" onclick="scrollToTop()" />
-      <!-- <h1>Doc's Pest Control</h1> -->
+      <a href="tel:+14805286357">
+        <button class="callUsButton">(480) 528-6357</button>
+      </a>
     </header>
     <main>
       <p id="spacer">.</p>
       <section id="intro">
-        <h1>Fast, Safe, and Reliable Pest Control You Can Count On</h1>
+        <h1>Fast, Safe, and Reliable Pest Control<br />You Can Count On</h1>
         <p>
           Serving the East Valley of Arizona with expert pest removal for homes
           and businesses.
         </p>
-        <a href="tel:" class="callUsButton">
-          <button>Get a Free Quote</button>
+        <a href="tel:+14805286357">
+          <button class="callUsButton">Get a Free Quote</button>
         </a>
       </section>
       <section id="imageBlendSection">
         <div id="blendSectionText">
           <h2>Why Choose Doc's Pest Control?</h2>
-          <p>
-            With over 9 years of experience, Doc’s Pest Control is a trusted
-            name in pest management. Our team of trained professionals is
-            committed to providing top-notch service, using environmentally
-            responsible products to protect your home or business.
+          <!-- <p>
+            With a passion for helping families and a wealth of experience, I founded Doc’s Pest Control. My mission was simple: to provide effective, safe, and reliable pest control services tailored to the unique needs of each household. I wanted to build a company where customers felt valued and understood, not just another number on a service call list.
           </p>
-          <p>ORIGIN STORY</p>
+          <p>
+            Today, with 9 years of experience, we proudly serve the community, ensuring homes remain pest-free and families can enjoy peace of mind!
+          </p> -->
+          <p>
+            With a passion for helping families and a strong background in pest
+            control, I founded Doc’s Pest Control with a clear mission: to
+            provide effective, safe, and reliable pest solutions tailored to
+            each home’s unique needs. I saw too many companies treating
+            customers like numbers—quick in, quick out, with little care for
+            long-term results or real relationships. I wanted to change that by
+            creating a company rooted in integrity, personal service, and
+            genuine care for the people we serve.
+          </p>
+          <p>
+            From the start, our focus has been on delivering high-quality
+            service while educating homeowners about prevention and safety. We
+            understand how disruptive pests can be to a household’s comfort and
+            health, and we take pride in offering solutions that are both
+            thorough and family-friendly. Every job we take on is handled with
+            the same attention and commitment we’d give to our own homes.
+          </p>
+          <p>
+            Today, with over 9 years of hands-on experience, Doc’s Pest Control
+            proudly serves families across the East Valley. We’re grateful to be
+            a trusted part of the community, helping our neighbors protect what
+            matters most. Whether it’s a one-time issue or ongoing prevention,
+            we’re here to ensure your home stays pest-free—so you can enjoy
+            peace of mind, year-round.
+          </p>
         </div>
         <img src="./images/docDoorway.webp" />
       </section>
@@ -144,33 +171,33 @@
               alt="bug icon"
               loading="lazy"
               src="./images/icons/wasp.png"
-              />
-            </li>
-          </ul>
-        </section>
-        <section id="servicesDetailed">
-          <ul class="gridLayout">
-            <li class="pest" id="residential">
-              <h3>Residential Pest Control</h3>
-              <p class="hidden">
-                Protect your home and family from common pests with pet and family
-                safe, effective, year-round treatments.
-              </p>
-            </li>
-            <li class="pest" id="commercial">
-              <h3>Commercial Pest Control</h3>
-              <p class="hidden">
-                Keep your business pest-free and compliant with discreet,
-                customized pest control solutions.
-              </p>
-            </li>
-            <li class="pest" id="scorpion">
-              <h3>Scorpions</h3>
-              <p class="hidden">
-                Defend your home against venomous Bark Scorpions with specialized
-                sealing and control techniques.
-              </p>
-            </li>
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="servicesDetailed">
+        <ul class="gridLayout">
+          <li class="pest" id="residential">
+            <h3>Residential Pest Control</h3>
+            <p class="hidden">
+              Protect your home and family from common pests with pet and family
+              safe, effective, year-round treatments.
+            </p>
+          </li>
+          <li class="pest" id="commercial">
+            <h3>Commercial Pest Control</h3>
+            <p class="hidden">
+              Keep your business pest-free and compliant with discreet,
+              customized pest control solutions.
+            </p>
+          </li>
+          <li class="pest" id="scorpion">
+            <h3>Scorpions</h3>
+            <p class="hidden">
+              Defend your home against venomous Bark Scorpions with specialized
+              sealing and control techniques.
+            </p>
+          </li>
           <li class="pest" id="ant">
             <h3>Ants</h3>
             <p class="hidden">
@@ -193,7 +220,7 @@
             </p>
           </li>
           <li class="pest" id="rodent">
-            <h3>Rodent Removal</h3>
+            <h3>Rodents</h3>
             <p class="hidden">
               Eliminate rats, mice, and roof rats with targeted removal and
               prevention plans built for Arizona homes.
@@ -232,14 +259,17 @@
               We proudly serve Mesa, Chandler, Gilbert, Queen Creek, Apache
               Junction, and surrounding areas.
             </p>
-            <p>Phone Number</p>
-            <button onclick="sendEmail()">Get a Free Quote</button>
+            <p>(480) 528-6357</p>
+            <a href="tel:+14805286357">
+              <button class="callUsButton">Get a Free Quote</button>
+            </a>
           </div>
         </div>
       </section>
       <section id="faq">
         <h2>Frequently Asked Questions</h2>
         <dl>
+          <div class="faqBreak"></div>
           <dt>Are your treatments safe for kids and pets?</dt>
           <dd>
             Yes! We use eco-friendly, non-toxic solutions that are safe for the
@@ -276,6 +306,7 @@
             Yes, all our technicians are fully licensed, certified, and insured
             to perform pest control services in Arizona.
           </dd>
+          <div class="faqBreak"></div>
         </dl>
       </section>
     </main>
