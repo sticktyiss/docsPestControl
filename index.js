@@ -29,9 +29,16 @@ document.querySelectorAll('dl > *').forEach(item => {
   observer.observe(item);
 });
 
-const sendEmail = () => {
-  const recipient = "octavio.pen21@gmail.com";
-  const subject = "Customer Inquiry from Your Website";
-  const body = "Hello,\n\nI’d like to get in touch regarding your services.";
-  window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+const contactDoc = () => {
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = `tel:+14805286357`;
+  } else {
+    const recipient = "octavio.pen21@gmail.com";
+    const subject = "Customer Inquiry from Your Website";
+    const body = "Hello,\n\nI’d like to get in touch regarding your services.";
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
 }
+
