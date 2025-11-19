@@ -91,21 +91,30 @@ main {
 #intro {
   margin-top: calc(100px + 8vh);
   width: 90%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: space-around;
   h1 {
     font-weight: 700;
-    font-size: 7vw;
+    font-size: 8vw;
     line-height: 1.2em;
   }
   p {
-    margin: 1vh;
-    font-size: 1em;
+    // margin: 1vh;
+    font-size: 4vw;
+    position: relative;
+    top: -20vw;
   }
   button {
     margin-top: 3vh;
     @include callUsButton($whiteColor, $whiteColor, $blackColor, $orangeColor);
     font-size: 20px;
     font-weight: 700;
+    position: relative;
+    top: -40vw
   }
   // button:hover {
   //   box-shadow: $blackColor 8px 10px 0px;
@@ -145,6 +154,10 @@ main {
       line-height: 1.2em;
       font-weight: 100;
       z-index: 1000;
+      text-shadow: $blackColor 1px 2px 2px;
+      background-color:rgba(0, 0, 0, 0.501);
+      padding: 1vw 2px;
+      border-radius: $borderRadius;
     }
   }
   img {
@@ -152,8 +165,10 @@ main {
     top: 15vw;
     height: 137vw;
     // width: auto;
-    -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
-    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+    // -webkit-mask-image: linear-gradient(325deg, rgba(0, 0, 0, 0.70) 20%, rgba(0, 0, 0, 0.49) 50%, transparent 100%);
+    // mask-image: linear-gradient(325deg, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.49) 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(325deg, rgba(0, 0, 0, 0.70) 20%, rgba(0, 0, 0, 0.5) 100%);
+    mask-image: linear-gradient(325deg, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 100%);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
