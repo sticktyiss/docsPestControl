@@ -61,7 +61,7 @@ $fontWeightTitle: 600;
     font-weight: 600;
     background-color: transparent;
     border: none;
-    transition: font-size .4s ease, top .4s ease;
+    transition: font-size .4s ease, top .4s ease, color .4s ease;
   }
 }
 #siteHeader.shrink {
@@ -410,6 +410,15 @@ footer {
 
 // TODO: Adding mobile styles below.
 @media screen and (max-width: 800px) {
-
-
+#siteHeader {
+  button {
+    font-size: 30px;
+    color: white;
+  }
+}
+#siteHeader.shrink {
+  button {
+    color: $orangeColor;
+  }
+}
 }

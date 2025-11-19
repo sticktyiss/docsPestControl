@@ -34,7 +34,7 @@
   font-weight: 600;
   background-color: transparent;
   border: none;
-  transition: font-size 0.4s ease, top 0.4s ease;
+  transition: font-size 0.4s ease, top 0.4s ease, color 0.4s ease;
 }
 
 #siteHeader.shrink {
@@ -378,6 +378,16 @@ footer p {
 }
 footer p span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  #siteHeader button {
+    font-size: 30px;
+    color: white;
+  }
+  #siteHeader.shrink button {
+    color: #fc6107;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
