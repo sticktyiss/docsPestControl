@@ -19,7 +19,8 @@
 #siteHeader img {
   height: 95%;
   width: auto;
-  margin-left: 30px;
+  margin-left: 3vw;
+  z-index: 1000;
 }
 #siteHeader img:hover {
   cursor: pointer;
@@ -28,8 +29,8 @@
   position: absolute;
   top: 30px;
   right: 40px;
-  color: #fc6107;
-  font-size: 40px;
+  color: #fffcff;
+  font-size: 30px;
   font-family: "Hanuman", serif;
   font-weight: 600;
   background-color: transparent;
@@ -44,6 +45,7 @@
 #siteHeader.shrink button {
   top: 15px;
   font-size: 30px;
+  color: #fc6107;
 }
 
 main {

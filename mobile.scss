@@ -46,7 +46,8 @@ $fontWeightTitle: 600;
   img {
     height: 95%;
     width: auto;
-    margin-left: 30px;
+    margin-left: 3vw;
+    z-index: 1000;
   }
   img:hover {
     cursor: pointer;
@@ -55,8 +56,8 @@ $fontWeightTitle: 600;
     position: absolute;
     top: 30px;
     right: 40px;
-    color: $orangeColor;
-    font-size: 40px;
+    color: $whiteColor;
+    font-size: 30px;
     font-family: $fontTitle;
     font-weight: 600;
     background-color: transparent;
@@ -69,7 +70,8 @@ $fontWeightTitle: 600;
   padding: 5px 10px;
   button {
     top: 15px;
-    font-size: 30px;
+    font-size: 30px; 
+    color: $orangeColor;
   }
 }
 
