@@ -1,0 +1,421 @@
+$yellowColor: #fbb32d;
+$orangeColor: #fc6107;
+$blackColor: #030301;
+$grayColor: #8f8f8f;
+$whiteColor: #fffcff;
+$dropShadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
+
+$borderRadius: 1vw;
+
+@import "fonts";
+$fontSizeTitle: 3vw;
+$fontWeightTitle: 600;
+
+@mixin callUsButton($bgColor1, $bgColor2, $borderColor, $textColor) {
+  padding: .6em .8em;
+  border-radius: $borderRadius;
+  border: $borderColor solid .2em;
+  color: $textColor;
+  background-image: radial-gradient($bgColor1, $bgColor2);
+  font-family: $fontTitle;
+  cursor: pointer;
+  box-shadow: $blackColor 5px 5px 0px;
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+@mixin callUsButtonHover() {
+  button:hover {
+    box-shadow: $blackColor 8px 15px 0px;
+    transform: translateY(-4px);
+  }
+}
+
+#siteHeader {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.4s ease;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  img {
+    height: 95%;
+    width: auto;
+    margin-left: 30px;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+  button {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: $orangeColor;
+    font-size: 40px;
+    font-family: $fontTitle;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    transition: font-size .4s ease, top .4s ease, color .4s ease;
+  }
+}
+#siteHeader.shrink {
+  height: 60px;
+  padding: 5px 10px;
+  button {
+    top: 15px;
+    font-size: 30px;
+  }
+}
+
+// #siteHeader {
+//   button {
+//     font-size: 30px;
+//     color: white;
+//   }
+// }
+// #siteHeader.shrink {
+//   button {
+//     color: $orangeColor;
+//   }
+// }
+main {
+  background-image: radial-gradient(circle, $yellowColor, $orangeColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p, dd {
+    font-family: $fontDetail;
+  }
+  dt, h1, h2, h3, button {
+    font-family: $fontTitle;
+  }
+  #spacer {
+    font-size: 1px;
+  }
+#intro {
+  margin-top: calc(120px + 8vh);
+  width: 60%;
+  text-align: center;
+  h1 {
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 1.2em;
+  }
+  p {
+    margin: 1vh;
+    font-size: 1.2em;
+  }
+  button {
+    margin-top: 3vh;
+    @include callUsButton($whiteColor, $whiteColor, $blackColor, $orangeColor);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  // button:hover {
+  //   box-shadow: $blackColor 8px 10px 0px;
+  //   transform: translateY(-4px);
+  // }
+  @include callUsButtonHover();
+}
+#imageBlendSection {
+  display: flex;
+  justify-content: space-between;
+  height: 55vw;
+  width: 80vw;
+  margin: 10vh;
+  background-color: $blackColor;
+  border-radius: $borderRadius;
+  #blendSectionText {
+    width: 50%;
+    margin: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: $whiteColor;
+    h2 {
+      font-size: 2vw;
+      font-weight: 600;
+      justify-self: flex-start;
+    }
+    p {
+      max-width: 80%;
+      font-size: 1.3vw;
+      line-height: 1.2em;
+      font-weight: 100;
+    }
+  }
+  img {
+    height: auto;
+    width: 50%;
+    border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
+    mask-image: linear-gradient(to left, black 60%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+}
+#services {
+  min-height: 1000px;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      $whiteColor 0%,
+      $whiteColor 20%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 70%,
+      $whiteColor 100%
+    ),
+    url(images/docWindow-short.webp) no-repeat;
+  background-size: cover;
+  background-position: 0px center;
+  ul {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      width: 5vw;
+      height: auto;
+      -webkit-mask-image: linear-gradient(
+        300 deg,
+        black 50%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(300deg, black 50%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+    }
+  }
+}
+#servicesDetailed {
+  padding: 20px 0px;
+  background-color: $whiteColor;
+  width: 100%;
+  .gridLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    margin: 10px;
+    .pest:nth-child(1),
+    .pest:nth-child(2) {
+      grid-column: span 2;
+    }
+  }
+  .pest {
+    background-color: $grayColor;
+    height: 20vw;
+    margin: 10px;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    h3 {
+      font-family: $fontPestTitle;
+      font-size: 4vw;
+      color: $whiteColor;
+      text-shadow: $blackColor 0px 0px 10px;
+      transform: translateY(4vw);
+      transition: transform 0.4s ease;
+    }
+    p {
+      opacity: 0;
+      margin-top: 20px;
+      width: 70%;
+      font-size: 1.5vw;
+      color: $whiteColor;
+      text-shadow: 
+        $blackColor 0 0 10px,
+        $blackColor 0 0 10px;
+      text-align: center;
+      line-height: 1.2em;
+      // line-height: 1.2em;
+      font-weight: 300;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      transform: translateY(20px);
+    }
+  }
+  .pest:hover {
+    h3 {
+      transform: translateY(0);
+    }
+    p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .pest.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  // TODO: Add backgoround images to the grid layout
+  #residential {
+    background-image: url('./images/bugs/residential.webp');
+    background-size: cover;
+  }
+  #commercial {
+    background-image: url('./images/bugs/commercial.webp');
+    background-size: cover;
+  }
+  #rodent {
+    background-image: url('./images/bugs/rodent.webp');
+    background-size: cover;
+  }
+  #wasp {
+    background-image: url(./images/bugs/wasp.webp);
+    background-size: cover;
+  }
+  #cockroach {
+    background-image: url('./images/bugs/cockroach.webp');
+    background-size: cover;
+  }
+  #ant {
+    background-image: url('./images/bugs/ant.webp');
+    background-size: cover;
+  }
+  #scorpion {
+    background-image: url('./images/bugs/scorpion.webp');
+    background-size: cover;
+  }
+  #silverfish {
+    background-image: url('./images/bugs/silverfish.webp');
+    background-size: cover;
+  }
+  #spider {
+    // FIXME: Get spider image
+    background-image: url('./images/bugs/spider.webp');
+    background-size: cover;
+  }
+  #mosquito {
+    background-image: url('./images/bugs/mosquito.webp');
+    background-size: cover;
+  }
+}
+#contactUs {
+  width: 100%;
+  padding-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $whiteColor;
+  h2 {
+    margin: 10vh;
+    font-size: $fontSizeTitle;
+    font-weight: $fontWeightTitle;
+  }
+  #mapWithText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      width: 40%;
+      border-radius: $borderRadius;
+      box-shadow: $dropShadow;
+    }
+    div {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      h3 {
+        font-size: 2.2vw;
+      }
+      p {
+        font-size: 1.5vw;
+      }
+      button {
+        @include callUsButton($orangeColor, $orangeColor, $blackColor, $whiteColor);
+        font-size: 1.5vw;
+        font-weight: 600;
+      }
+      @include callUsButtonHover();
+    }
+  }
+}
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+  h2 {
+    font-size: $fontSizeTitle;
+    font-weight: $fontWeightTitle;
+    margin-top: 1.2em;
+  }
+  dl {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 40px;
+    margin: 40px 0px;
+    background-image: radial-gradient($yellowColor, $orangeColor);
+    // border: $blackColor solid 2px;
+    border-radius: $borderRadius;
+    box-shadow: $dropShadow;
+    dt {
+      margin-left: 5%;
+      margin-bottom: 10px;
+      font-size: 1.5vw;
+      font-weight: 600;
+      font-style: italic;
+    }
+    dd {
+      margin: 0px 10%;
+      font-size: 1.2vw;
+    }
+    .faqBreak {
+      height: 5px;
+      border-radius: $borderRadius;
+      background-color: $blackColor;
+      margin: 30px 0px;
+      width: 5vw;
+      align-self: center;
+      transition: width 1s ease;
+    }
+  }
+  dl > * {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  dl > *.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .faqBreak.visible {
+    width: 100%;
+  }
+}
+}
+
+footer {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  span {
+    font-weight: bold;
+  }
+}
+}
