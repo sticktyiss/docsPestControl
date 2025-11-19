@@ -32,7 +32,7 @@ document.querySelectorAll('dl > *').forEach(item => {
 const contactDoc = () => {
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   const recipient = "octavio.pen21@gmail.com";
-  const subject = "Customer Inquiry from Your Website";
+  const subject = "Customer Inquiry for Doc";
   const body = "Hello,\n\nI’d like to get in touch regarding your services.";
 
   if (isMobile) {
