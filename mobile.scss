@@ -5,7 +5,7 @@ $grayColor: #8f8f8f;
 $whiteColor: #fffcff;
 $dropShadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 
-$borderRadius: 1vw;
+$borderRadius: 3vw;
 
 @import "fonts";
 $fontSizeTitle: 3vw;
@@ -74,18 +74,6 @@ $fontWeightTitle: 600;
     color: $orangeColor;
   }
 }
-
-// #siteHeader {
-//   button {
-//     font-size: 30px;
-//     color: white;
-//   }
-// }
-// #siteHeader.shrink {
-//   button {
-//     color: $orangeColor;
-//   }
-// }
 main {
   background-image: radial-gradient(circle, $yellowColor, $orangeColor);
   display: flex;
@@ -98,20 +86,20 @@ main {
     font-family: $fontTitle;
   }
   #spacer {
-    font-size: 1px;
+    font-size: 0px;
   }
 #intro {
-  margin-top: calc(120px + 8vh);
-  width: 60%;
+  margin-top: calc(100px + 8vh);
+  width: 90%;
   text-align: center;
   h1 {
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 7vw;
     line-height: 1.2em;
   }
   p {
     margin: 1vh;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   button {
     margin-top: 3vh;
@@ -126,38 +114,44 @@ main {
   @include callUsButtonHover();
 }
 #imageBlendSection {
-  display: flex;
-  justify-content: space-between;
-  height: 55vw;
-  width: 80vw;
-  margin: 10vh;
-  background-color: $blackColor;
-  border-radius: $borderRadius;
+  display: inline;
+  position: relative;
+  // justify-content: space-between;
+  // height: ;
+  width: 100vw;
+  margin-top: 10vw;
+  // background-color: $blackColor;
+  // border-radius: $borderRadius;
+  overflow: hidden;
   #blendSectionText {
-    width: 50%;
-    margin: 3vh 0;
+    width: 100%;
+    height: 150vw;
+    padding: 1vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-around;
     color: $whiteColor;
+    background-color: $blackColor;
     h2 {
-      font-size: 2vw;
+      font-size: 6vw;
       font-weight: 600;
       justify-self: flex-start;
     }
     p {
-      max-width: 80%;
-      font-size: 1.3vw;
+      max-width: 90%;
+      font-size: 3.75vw;
       line-height: 1.2em;
       font-weight: 100;
+      z-index: 1000;
     }
   }
   img {
-    height: auto;
-    width: 50%;
-    border-top-right-radius: $borderRadius;
-    border-bottom-right-radius: $borderRadius;
+    position: absolute;
+    top: 15vw;
+    height: 137vw;
+    // width: auto;
     -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
     mask-image: linear-gradient(to left, black 60%, transparent 100%);
     -webkit-mask-repeat: no-repeat;

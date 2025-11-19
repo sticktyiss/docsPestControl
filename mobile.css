@@ -61,26 +61,26 @@ main dt, main h1, main h2, main h3, main button {
   font-family: "Hanuman", serif;
 }
 main #spacer {
-  font-size: 1px;
+  font-size: 0px;
 }
 main #intro {
-  margin-top: calc(120px + 8vh);
-  width: 60%;
+  margin-top: calc(100px + 8vh);
+  width: 90%;
   text-align: center;
 }
 main #intro h1 {
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 7vw;
   line-height: 1.2em;
 }
 main #intro p {
   margin: 1vh;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 main #intro button {
   margin-top: 3vh;
   padding: 0.6em 0.8em;
-  border-radius: 1vw;
+  border-radius: 3vw;
   border: #030301 solid 0.2em;
   color: #fc6107;
   background-image: radial-gradient(#fffcff, #fffcff);
@@ -96,39 +96,40 @@ main #intro button:hover {
   transform: translateY(-4px);
 }
 main #imageBlendSection {
-  display: flex;
-  justify-content: space-between;
-  height: 55vw;
-  width: 80vw;
-  margin: 10vh;
-  background-color: #030301;
-  border-radius: 1vw;
+  display: inline;
+  position: relative;
+  width: 100vw;
+  margin-top: 10vw;
+  overflow: hidden;
 }
 main #imageBlendSection #blendSectionText {
-  width: 50%;
-  margin: 3vh 0;
+  width: 100%;
+  height: 150vw;
+  padding: 1vw 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
   color: #fffcff;
+  background-color: #030301;
 }
 main #imageBlendSection #blendSectionText h2 {
-  font-size: 2vw;
+  font-size: 6vw;
   font-weight: 600;
   justify-self: flex-start;
 }
 main #imageBlendSection #blendSectionText p {
-  max-width: 80%;
-  font-size: 1.3vw;
+  max-width: 90%;
+  font-size: 3.75vw;
   line-height: 1.2em;
   font-weight: 100;
+  z-index: 1000;
 }
 main #imageBlendSection img {
-  height: auto;
-  width: 50%;
-  border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  position: absolute;
+  top: 15vw;
+  height: 137vw;
   -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
   mask-image: linear-gradient(to left, black 60%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
@@ -179,7 +180,7 @@ main #servicesDetailed .pest {
   background-color: #8f8f8f;
   height: 20vw;
   margin: 10px;
-  border-radius: 1vw;
+  border-radius: 3vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,7 +282,7 @@ main #contactUs #mapWithText {
 }
 main #contactUs #mapWithText img {
   width: 40%;
-  border-radius: 1vw;
+  border-radius: 3vw;
   box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
 main #contactUs #mapWithText div {
@@ -300,7 +301,7 @@ main #contactUs #mapWithText div p {
 }
 main #contactUs #mapWithText div button {
   padding: 0.6em 0.8em;
-  border-radius: 1vw;
+  border-radius: 3vw;
   border: #030301 solid 0.2em;
   color: #fffcff;
   background-image: radial-gradient(#fc6107, #fc6107);
@@ -333,7 +334,7 @@ main #faq dl {
   padding: 40px;
   margin: 40px 0px;
   background-image: radial-gradient(#fbb32d, #fc6107);
-  border-radius: 1vw;
+  border-radius: 3vw;
   box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
 main #faq dl dt {
@@ -349,7 +350,7 @@ main #faq dl dd {
 }
 main #faq dl .faqBreak {
   height: 5px;
-  border-radius: 1vw;
+  border-radius: 3vw;
   background-color: #030301;
   margin: 30px 0px;
   width: 5vw;
