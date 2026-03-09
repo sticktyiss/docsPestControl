@@ -179,9 +179,9 @@ main #servicesDetailed {
 }
 main #servicesDetailed .gridLayout {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0px;
-  margin: 10px;
+  margin: 5px;
 }
 main #servicesDetailed .gridLayout .pest:nth-child(1),
 main #servicesDetailed .gridLayout .pest:nth-child(2) {
@@ -189,7 +189,7 @@ main #servicesDetailed .gridLayout .pest:nth-child(2) {
 }
 main #servicesDetailed .pest {
   background-color: #8f8f8f;
-  height: 20vw;
+  height: 50vw;
   margin: 10px;
   border-radius: 3vw;
   display: flex;
@@ -202,24 +202,24 @@ main #servicesDetailed .pest {
 }
 main #servicesDetailed .pest h3 {
   font-family: "Flavors", sans-serif;
-  font-size: 4vw;
+  font-size: 7vw;
   color: #fffcff;
   text-shadow: #030301 0px 0px 10px;
-  transform: translateY(4vw);
+  transform: translateY(20vw);
   transition: transform 0.4s ease;
 }
 main #servicesDetailed .pest p {
   opacity: 0;
-  margin-top: 20px;
+  margin-top: 2vw;
   width: 70%;
-  font-size: 1.5vw;
+  font-size: 4vw;
   color: #fffcff;
   text-shadow: #030301 0 0 10px, #030301 0 0 10px;
   text-align: center;
   line-height: 1.2em;
   font-weight: 300;
   transition: opacity 0.4s ease, transform 0.4s ease;
-  transform: translateY(20px);
+  transform: translateY(1vw);
 }
 main #servicesDetailed .pest:hover h3 {
   transform: translateY(0);
