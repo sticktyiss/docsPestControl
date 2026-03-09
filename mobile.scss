@@ -8,7 +8,7 @@ $dropShadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 $borderRadius: 3vw;
 
 @import "fonts";
-$fontSizeTitle: 3vw;
+$fontSizeTitle: 8vw;
 $fontWeightTitle: 600;
 
 @mixin callUsButton($bgColor1, $bgColor2, $borderColor, $textColor) {
@@ -183,7 +183,7 @@ main {
       $whiteColor 0%,
       $whiteColor 30%,
       rgba(0, 0, 0, 0) 40%,
-      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 70%,
       $whiteColor 100%
     ),
     url(images/docWindow-short.webp) no-repeat;
@@ -235,7 +235,7 @@ main {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transform: translateY(30px);
+    // transform: translateY(70vw);
     transition: opacity 1s ease, transform 1s ease;
     h3 {
       font-family: $fontPestTitle;
@@ -320,42 +320,49 @@ main {
 }
 #contactUs {
   width: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $whiteColor;
   h2 {
-    margin: 10vh;
+    margin-top: 10vw;
     font-size: $fontSizeTitle;
     font-weight: $fontWeightTitle;
   }
   #mapWithText {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     img {
-      width: 40%;
+      width: 90%;
+      margin: 5vw;
       border-radius: $borderRadius;
       box-shadow: $dropShadow;
     }
     div {
-      width: 40%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
       text-align: center;
       h3 {
-        font-size: 2.2vw;
+        font-size: 5vw;
+        margin: 4vw;
       }
       p {
-        font-size: 1.5vw;
+        font-size: 3vw;
+        line-height: 1.2em;
+        margin-bottom: 4vw
       }
       button {
         @include callUsButton($orangeColor, $orangeColor, $blackColor, $whiteColor);
-        font-size: 1.5vw;
+        font-size: 3vw;
+        margin: 2vw;
+        margin-bottom: 20vw;
         font-weight: 600;
       }
       @include callUsButtonHover();

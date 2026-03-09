@@ -151,7 +151,7 @@ main #imageBlendSection img {
 main #services {
   min-height: 500px;
   width: 100%;
-  background: linear-gradient(to bottom, #fffcff 0%, #fffcff 30%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 80%, #fffcff 100%), url(images/docWindow-short.webp) no-repeat;
+  background: linear-gradient(to bottom, #fffcff 0%, #fffcff 30%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #fffcff 100%), url(images/docWindow-short.webp) no-repeat;
   background-size: cover;
   background-position: 0px center;
 }
@@ -197,7 +197,6 @@ main #servicesDetailed .pest {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transform: translateY(30px);
   transition: opacity 1s ease, transform 1s ease;
 }
 main #servicesDetailed .pest h3 {
@@ -274,7 +273,7 @@ main #servicesDetailed #mosquito {
 }
 main #contactUs {
   width: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,22 +281,24 @@ main #contactUs {
   background-color: #fffcff;
 }
 main #contactUs h2 {
-  margin: 10vh;
-  font-size: 3vw;
+  margin-top: 10vw;
+  font-size: 8vw;
   font-weight: 600;
 }
 main #contactUs #mapWithText {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main #contactUs #mapWithText img {
-  width: 40%;
+  width: 90%;
+  margin: 5vw;
   border-radius: 3vw;
   box-shadow: rgba(0, 0, 0, 0.411) 3px 5px 10px;
 }
 main #contactUs #mapWithText div {
-  width: 40%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,10 +306,13 @@ main #contactUs #mapWithText div {
   text-align: center;
 }
 main #contactUs #mapWithText div h3 {
-  font-size: 2.2vw;
+  font-size: 5vw;
+  margin: 4vw;
 }
 main #contactUs #mapWithText div p {
-  font-size: 1.5vw;
+  font-size: 3vw;
+  line-height: 1.2em;
+  margin-bottom: 4vw;
 }
 main #contactUs #mapWithText div button {
   padding: 0.6em 0.8em;
@@ -320,7 +324,9 @@ main #contactUs #mapWithText div button {
   cursor: pointer;
   box-shadow: #030301 5px 5px 0px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  font-size: 1.5vw;
+  font-size: 3vw;
+  margin: 2vw;
+  margin-bottom: 20vw;
   font-weight: 600;
 }
 main #contactUs #mapWithText div button:hover {
@@ -334,7 +340,7 @@ main #faq {
   margin-bottom: 2vh;
 }
 main #faq h2 {
-  font-size: 3vw;
+  font-size: 8vw;
   font-weight: 600;
   margin-top: 1.2em;
 }
